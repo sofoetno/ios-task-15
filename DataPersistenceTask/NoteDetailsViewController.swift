@@ -1,12 +1,13 @@
 import UIKit
 
 class NoteDetailsViewController: UIViewController {
+    private let editButton = UIButton()
+    private let deleteButton = UIButton()
+    private let singleNoteTitle = UILabel()
+    private let singleDesription = UILabel()
+    
     var note: Note? = nil
     var noteIndex: Int? = nil
-    let editButton = UIButton()
-    let deleteButton = UIButton()
-    let singleNoteTitle = UILabel()
-    let singleDesription = UILabel()
     var noteListViewController: NoteListViewController?
     
     override func viewDidLoad() {
